@@ -1,6 +1,6 @@
 /*
- * File:    WilliamPyke_Lab1_Q11.c
- * Author:  WilliamPyke
+ * File:    Lab1_816029626_Q11.c
+ * Author:  William Pyke
  * ID No:   816029626
  * 
  * @brief Program to Flash an LED connected to RD2 every 0.5ms
