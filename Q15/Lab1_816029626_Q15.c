@@ -212,7 +212,7 @@ void LEDon()
 }   /* LEDon() */
 
 /*!
- *@brief Turns an LED connected to the RD2 pin onff
+ *@brief Turns an LED connected to the RD2 pin off
  *
  *@par
  */    
