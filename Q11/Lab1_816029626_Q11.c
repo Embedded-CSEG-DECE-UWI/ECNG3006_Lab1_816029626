@@ -68,6 +68,11 @@
 
 #define _XTAL_FREQ 8000000      //Defines frequency as 8Mhz
 
+/*!
+ *@brief Main function that sets various bits and continuously runs
+ *
+ *@par
+ */
 void main(void) 
 {
     TRISDbits.TRISD2 = 0;       //Sets RD2 as output
@@ -79,6 +84,6 @@ void main(void)
     }
     
     return;
-}
+}   /* main() */
 
 /*** end of file ***/
