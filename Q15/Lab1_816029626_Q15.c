@@ -229,9 +229,9 @@ void LEDoff()
  *
  *@par
  */
-void main(void) 
-{
-    timer2setup();      //setups various peripherals such as timers, USART, interrups and the LED.
+void main(void)             //The FSM was implemented using Switch Case statments as it was easier than the vector table method,
+{                           //but had advantages when compared to the if-else method.
+    timer2setup();          //setups various peripherals such as timers, USART, interrups and the LED.
     USARTsetup();
     setupINT();
     setupLED();
@@ -245,7 +245,7 @@ void main(void)
             //printf("State = %2d \r",state);   would be used for debugging purposes
             switch(state) 
             { 
-                case WAITING:
+                case WAITING:                           // In wating state until a character is recieved (keypress)
                     if(receive == 0)
                     {
                         state = WAITING;
